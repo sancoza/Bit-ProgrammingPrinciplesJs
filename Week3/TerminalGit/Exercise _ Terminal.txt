@@ -1,0 +1,22 @@
+Create a folder with your name on desktop and create a bit-pp folder in it. The same should be
+done for the web part of course, first thing in the morning the next day.
+● pwd
+● mkdir student_name
+● ls (ll, dir)
+● cd student_name
+● ls (ll, dir)
+● mkdir bit-pp
+● ls
+● cd bit-pp
+○ At this point, a student should be at ~/Desktop/student_name/bit-pp/
+● code . (opens folder in VSC from terminal)
+● touch some-file-for-test
+● vi some-file-for-test
+○ Add some content to the file
+○ Vi commands (:wq - write quit, :q! - quit discard changes, i - insert, esc - exit
+insert)
+
+● cat some-file-for-test
+● ls
+● rm some-file-for-test
+● ll
