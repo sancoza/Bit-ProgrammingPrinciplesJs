@@ -5,17 +5,21 @@
 // Output: no
 
 // var e = 3;
-// var a = [5, -4.2, 3, 7];
 
+// var a =[5, -4.2, 3, 7];
+// var found=false;
 
-// for (i=0; i < a.length; i++) {
-//     if (e === a[i]) {
-//         console.log("Yes");
-//         break;
-//     } else {
-//         console.log("No");
-//         break;
-//     }
+// for (i = 0; i < a.length; i++) {
+//   if (e === a[i]) {
+//     found=true;
+//   }
+// }
+
+// if (found) {
+//   console.log("yes");
+// }
+// else{
+//   console.log("no");
 // }
 
 // 2. Write a program that multiplies every positive element of a given array by 2.
@@ -23,9 +27,10 @@
 // Output array: [-3, 22, 10, 6.8, -8]
 
 // var array = [-3, 11, 5, 3.4, -8];
-// for (var i = 0; i < array.length; i++) {
+
+// for (i = 0; i < array.length; i++ ) {
 //   if (array[i] > 0) {
-//     array[i] = array[i] * 2;
+//     array[i]= array[i]*2;
 //   }
 // }
 // console.log(array);
