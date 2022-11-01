@@ -102,6 +102,20 @@
 // }
 // console.log(result);
 
+// var a = [2, 4, -2, 7, -2, 4, 2];
+// var result = true;
+
+// for (var i = 0; i < a.length / 2; i++) {
+//     if (a[i] != a[a.length -i -1]) {
+//         result= false;
+//     }
+// }
+
+// if(result)
+//     console.log("The array is symmetrical.");
+// else
+//     console.log("The array is not symmetrical.");
+
 // 7. Write a program that intertwines two arrays. You can assume the arrays are of the same
 // length.
 // Input arrays: [4, 5, 6, 2], [3, 8, 11, 9]
@@ -153,7 +167,6 @@
 // var p=3;
 // var a = [2, -2, 33, 12, 5, 8];
 // var result=[];
-
 
 // for (var i=0; i < a.length; i++) {
 //   if(p > a.length) {
