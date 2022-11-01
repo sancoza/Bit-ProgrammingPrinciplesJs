@@ -8,7 +8,7 @@
 //     console.log(i + "odd");
 //   }
 // }
-// var sum =0;
+
 
 // 2. Write a program to sum the multiples of 3 and 5 under 1000.
 
