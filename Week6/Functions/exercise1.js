@@ -89,40 +89,22 @@ console.log(result);
 // * * *
 // * * * * * * *
 
-function horizontalChart(a, b, c) {
-  var res = "";
-
-  for (var i = 0; i < a; i++) {
-      res += '*\t';
+function draw (a, b, c) {
+  var result = "";
+  for (var i = 0; i < a; i++) {            
+      result += "*"; }   
+  if (i === a) result += "\n";  
+  for (var j = 0; j < b; j++) {
+      result += "*"; }
+  if (j === b) result += "\n";
+  for (var k = 0; k < c; k++) {
+      result += "*";
   }
-  res += '\n';
-  for (var i = 0; i < b; i++) {
-      res += '*\t';
-  }
-  res += '\n';
-  for (var i = 0; i < c; i++) {
-      res += '*\t';
-  }
-  return res;
-
+          return result
 }
+console.log(draw(5,3,7));
 
-var chart = horizontalChart(5, 3, 7);
-console.log(chart);
 
-// v.2
-
-function chart() {
-  var res = "";
-  for (var i = 0; i < arguments.length; i++) {
-      for (var j = 0; j < arguments[i]; j++) {
-          res += '*\t';
-      }
-      res += '\n';
-  }
-  return res;
-}
-console.log(chart(5, 3, 7, 12, 6, 8, 2));
 
 // 7. Write a program that calculates a number of digits of a given number.
 
