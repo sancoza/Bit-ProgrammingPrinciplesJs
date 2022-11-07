@@ -146,19 +146,16 @@ console.log(res);
 
 // 9. Write a program that calculates the sum of odd elements of a given array.
 
-function sumOdd(arr) {
-
+function sum (arr){
   var sum = 0;
-  for (var i = 0; i < arr.length; i++) {
+  for (var i = 0; i < arr.length; i++){
       if (arr[i] % 2 !== 0) {
           sum += arr[i];
       }
   }
-
   return sum;
 }
-var sum = sumOdd([1, 2, 3, 4, 5]);
-console.log(sum);
+console.log(sum([1,2,1,4,1,6,5])); 
 
 
 
