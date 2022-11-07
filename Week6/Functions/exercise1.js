@@ -58,57 +58,32 @@ var result = mean(1, 2, 3, 4, 4);
 console.log(result);
 
 
-// Write a program that draws a square of a given size. For example, if the size of square
+//5. Write a program that draws a square of a given size. For example, if the size of square
 // is 5 the program should draw:
 // *****
 // * *
 // * *
 // * *
 // *****
-function squareStar(n) {
-  var res = "\n";
+// var result ="*****\n*   *\n*   *\n*   *\n*****"; 
+// function stars (a) {
+//   var result = "";
+//   for (var i = 0; i < a; i++) {
+//       for (var j = 0; j < a; j++){
+//           if (i === 0 || i === a - 1 || j === 0 || j === a - 1){
+//           result += "*";
+//       } else {
+//           result += " ";
+//       }
+//   }
+//   if (i !== a - 1) result += "\n";
+//   }
+//   return result;
+// }
 
-  for (var i = 0; i < n; i++) {
-      res += '*';
+// console.log(stars(5));
 
-  }
-  res += '\n';
-  for (var i = 0; i < (n - 2); i++) {
-      res += '*\t*\n';
-
-  }
-
-  for (var i = 0; i < n; i++) {
-      res += '*';
-
-
-  }
-  return res;
-
-}
-var stars = squareStar(5);
-console.log(stars);
-
-// v.2
-
-function stars(a) {
-  var res = '';
-  for (var i = 0; i < a; i++) {
-      for (var j = 0; j < a; j++) {
-          if (i === 0 || i === a - 1 || j === 0 || j === a - 1) {
-              res += '*';
-          } else {
-              res += " ";
-          }
-      }
-      res += '\n';
-  }
-  return res;
-}
-var result = stars(7);
-console.log(result);
-
-// Write a program that draws a horizontal chart representing three given values. For
+//6. Write a program that draws a horizontal chart representing three given values. For
 // example, if values are 5, 3, and 7, the program should draw:
 // * * * * *
 // * * *
