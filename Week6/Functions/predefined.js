@@ -24,17 +24,14 @@
 // function arrToStringFiltered(arr) {
 //   var str = '';
 //   for (var i = 0; i < arr.length; i++) {
-//     if (arr[i] !== null) {
-//       if (isFinite(arr[i])) {
-//         str += arr[i];
-//       }
+//     if (arr[i] !== null && isFinite(arr[i])) {
+//   str += arr[i];
+
 //     }
 //   }
 //   return str;
 // }
-// console.log(
-//   arrToStringFiltered([NaN, 0, 15, false, -22, '', undefined, 47, null])
-// );
+// console.log(arrToStringFiltered([NaN, 0, 15, false, -22, '', undefined, 47, null]));
 
 // 3.Write a program to filter out falsy values from the array.
 // Input: [NaN, 0, 15, false, -22, &#39;&#39;, undefined, 47, null]
@@ -59,7 +56,7 @@
 // function numOfInteger(arr) {
 //   var newSome = [];
 //   for (var i = 0; i < arr.length; i++) {
-//     if (arr[i]) {
+//     if (arr[i]) {//truti vrednost
 //       if (arr[i] === parseInt(arr[i], 10)) {
 //         newSome[newSome.length] = arr[i];
 //       }
@@ -78,7 +75,7 @@
 //   var sum = [];
 //   for (var i = 0; i < arr.length; i++) {
 //     if (arr[i]) {
-//       if (arr[i] != parseInt(arr[i], 10)) {
+//       if (arr[i] !== parseInt(arr[i], 10)) {
 //         sum[sum.length] = arr[i];
 //       }
 //     }
