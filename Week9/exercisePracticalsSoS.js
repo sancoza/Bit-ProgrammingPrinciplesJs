@@ -164,15 +164,15 @@
 //   }
 //   return countA;
 // });
-//var arar = ['morning', 'tea',  'apple','amazing , 'JavaScript'];
-//console.log(howManyAInString(arar[2]))
+// var arar = ['morning', 'tea',  'apple','amazing' , 'JavaScript'];
+// console.log(howManyAInString(arar[2]));
 
 // function sortByAppearances(arrayOfStrings) {
 // var tempString;
-// for (var i = 0; i < arrayOfStrings.length-1; i++) {
-//   for (var j = 1; j < arrayOfStrings - i; j++) {
-//     console.log(i,j)
-//     if (howManyAInString(arrayOfStrings[i]) > howManyAInString(arrayOfStrings[j])) {
+// for (var i = 0; i < arrayOfStrings.length; i++) {
+//   for (var j = 0; j < arrayOfStrings.length; j++) {
+   
+//     if (howManyAInString(arrayOfStrings[i]) < howManyAInString(arrayOfStrings[j])) {
 
 //       tempString = arrayOfStrings[i];
 //       arrayOfStrings[i] = arrayOfStrings[j];
@@ -183,7 +183,7 @@
 // return arrayOfStrings;
 // };
 
-// console.log(sortByAppearances(['apple', 'tea', 'amazing', 'morning', 'JavaScript']))
+// console.log(sortByAppearances(['apple', 'tea', 'amazing', 'morning', 'JavaScript']));
 
 // 9. Write a function that prints out the date of the next day.
 // Output: 25. 10. 2018.
