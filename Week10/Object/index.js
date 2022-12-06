@@ -148,3 +148,35 @@
 // var res = addElZerro(arr);
 // console.log(res);
 // console.log(arr);
+
+var book = {
+  name:'Na Drini ćuprija',
+  published:1945,
+  author: {
+    firstName:'Ivo',
+    lastName:'Andrić'
+  }
+};
+
+console.log(book.name);
+console.log(book.author.firstName+ ' ' + book.author.lastName);
+
+var hero = {
+  name:'Leonardo',
+  kind:'Turtle',
+  occupation:'Ninja',
+  say: function() {
+    return 'I am ' + hero.occupation;
+  }
+}
+
+console.log(hero.say());
+
+hero.sayName = function () {
+  return hero.name;
+}
+
+console.log(hero.sayName());
+
+delete hero.name;
+console.log(hero);
