@@ -235,10 +235,6 @@
 // var drzave = { 1 : "RS" , 2 : "RU" , 3 : "UK", 4 : "ESP" };
 // var gradovi = [ ["London", 3], ["Novi Sad", 1], ["Moskva", 2], ["Madrid", 4]];
 
-// Napisati funkciju koja treba da primi kao parametar niz koji sadrzi parove naziva korisnika i njihovih korisnickih uloga,
-// npr: "markec|admin", "godzz|webmaster", "nikola123|admin", "nennad|moderator"
-
-// U funkciji se kreira drugi niz, koji sadrzi samo korisnicke uloge i to vraca kao povratnu vrednost. Napomena: ne dodavati duplikate.
 
 // var drzave = { 1: 'RS', 2: 'RU', 3: 'UK', 4: 'ESP' };
 // var gradovi = [
@@ -254,7 +250,49 @@
 //   console.log(grad[0] + ' - ' + drzava);
 // }
 
+// Zadatak 7:
+//keirati JavaScript objekat koji ce reprezentovati jedan automobil.
+// 	Objekat treba da sadrzi slede atribute:
+// 		- Marka 	(String)
+// 		- Model		(String)
+// 		- Upaljen	(Boolean)
+// 		- Snaga		(int)
+// 		- Boja		(String)
+// 	I sledece metode:
+// 		- Upali: 		Postavlja atribut 'Upaljen' na true
+// 		- Ugasi: 		Postavlja atribut 'Upaljen' na false
+// 		- Prefarbaj:	Kao parametar prima ime nove boje, i postavlja atribut 'Boja' na tu vrednost
 
 
+// var automobil = {
+//   marka: 'Mercedes',
+//   model: 'A klasa',
+//   upaljen:false,
+//   snaga:100,
+//   boja:'Crna',
+//   upali: function() {
+//     automobil.upaljen = true;
+//   },
+//   ugasi:function() {
+//     automobil.upaljen = false;
+//   },
+//   prefarbaj: function (novabBoja) {
+//     automobil.boja = novabBoja;
+//   }
+// }
 
+// automobil.upali();
+// automobil.prefarbaj('Roza');
 
+// console.log('Podaci o automobilu:');
+// console.log("Marka: " + automobil.marka);
+// console.log("Model: " + automobil.model);
+// console.log("Snaga: " + automobil.snaga);
+// console.log("Boja: " + automobil.boja);
+// console.log("Upaljen: ");
+
+// if(automobil.upaljen == true) {
+// 	console.log("DA");
+// }else {
+// 	console.log("NE");
+// }
