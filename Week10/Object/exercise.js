@@ -97,89 +97,98 @@
 // ○ Add a method that changes the type of cuisine to the given value.
 // ○ Add a method that delete a given ingredient from the list of ingredients.
 
-// function createRecipe (name,cuisine,complex,ingredients,time,instruction) {
+// var createRecipe  = function()//može i ovako
+
+// function createRecipe(
+//   name,
+//   cuisineType,
+//   complexity,
+//   ingridiens,
+//   time,
+//   instructions
+// ) {
+//   // if (typeof name !== 'string') {
+//   //   console.log('Parametar name is wrong');
+//   // }
 //   var recipe = {
-//     recipeName: name,
-//     cuisineType: cuisine,
-//     complexity:complex,
-//     listOfIngredients: ingredients,
-//     preparationTime: time,
-//     preparingInstruction:instruction,
-//     printIngredients: function() {
-//       console.log(recipe.listOfIngredients);
+//     name: name,
+//     cuisineType: cuisineType,
+//     complexity: complexity,
+//     ingridiens: ingridiens,
+//     preparingTime: time,
+//     instructions: instructions,
+//     printIng: function () {
+//       console.log(recipe.ingridiens);
 //     },
-//     isItDoneIn15min:
-//     function () {
-//       return recipe.preparationTime === '30min';
+//     checkIsUnder15min: function () {
+//       return recipe.preparingTime < 15;
 //     },
-//     replaceCuisine: function(newCuisine) {
-//       recipe.cuisineType = newCuisine;
+//     changeCuisineType: function (newCuisineType) {
+//       recipe.cuisineType = newCuisineType;
 //     },
-//     deleteIngredient: function(list, ing) {
-//       var updatedList = [];
-//       for (var i = 0; i < list.length; i++) {
-//           if (list[i] !== ing) {
-//               updatedList[updatedList.length] = list[i];
-//           }
+//     deleteIngridients: function (ingridient) {
+//       var updatedIngrients = [];
+//       for (let i = 0; i < recipe.ingridiens.length; i++) {
+//         if (recipe.ingridiens[i] !== ingridient) {
+//           updatedIngrients[updatedIngrients.length] = recipe.ingridiens[i];
+//         }
 //       }
-//       return updatedList;
-//     }
-//   }
+//       recipe.ingridiens = updatedIngrients;
+//     },
+//   };
 //   return recipe;
 // }
 
-// var recipe = createRecipe ('pancakes','USA',1,['water','flour','eggs','milk','cream'],'25min','mix and bake','Serbia');
+// var paprikas = createRecipe(
+//   'paprikas',
+//   'Madjarska kuhinja',
+//   3,
+//   ['krompir', 'paprika', 'crni luk', 'biber'],
+//   60,
+//   'Sipati vodu u lonac...'
+// );
 
-// console.log(recipe);
+// console.log(paprikas);
+// console.log(paprikas.name);
+// console.log(paprikas.ingridiens);
+// console.log(paprikas.ingridiens[0]);
+// paprikas.printIng();
+// console.log(paprikas.checkIsUnder15min());
+// console.log(paprikas);
+// paprikas.changeCuisineType('italijanska kuhinja');
+// console.log(paprikas);
 
-// // recipe.replaceCuisine('japanska');
-// // console.log(recipe.isItDoneIn15min());
-// recipe.replaceCuisine('japanska');
-// console.log(recipe.deleteIngredient(recipe.listOfIngredients, "milk"));
-// console.log(recipe.isItDoneIn15min);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// console.log(paprikas);
+// paprikas.deleteIngridients('biber');
+// console.log(paprikas);
 
 
-
-
-
-// function createRecipe(t,l) {
+// function createRecipe(n, ct, cm, ing, t, ins) {
 //   var recipe = {
-//     title:t,
-//     list:l, 
-//   deleteIng: function(ing) {
-//     var updatedList = [];
-//     for (let i = 0; i < recipe.list.length; i++) {
-//       if(ing !== recipe.list[i]) {
-//         updatedList[updatedList.length] = recipe.list[i];
+//     name: n,
+//     cuisineType: ct,
+//     complexity: cm,
+//     ingridients: ing,
+//     time: t,
+//     instructions: ins,
+//     printIng: function () {
+//       console.log(recipe.ingridients);
+//     },
+//     checkIsUnder15Min: function () {
+//       return recipe.time < 15;
+//     },
+//     changeCuisineType: function (newCuisineType) {
+//       recipe.cuisineType = newCuisineType;
+//     },
+//     deleteIngridient: function (ingredient) {
+//       var updatedIngredients = [];
+//       for (var i = 0; i < recipe.ingridients.length; i++) {
+//         if (recipe.ingridients[i] !== ingredient) {
+//           updatedIngredients[updatedIngredients.length] = recipe.ingridients[i];
+//         }
 //       }
-//     }
-//     recipe.list = updatedList;
-//   },
+//       recipe.ingridients = updatedIngredients;
+//     },
 //   };
-//  return recipe;
+//   return recipe;
 // }
-
-// var res = createRecipe('Ruska salata', ['majonez','kiseli krastavci','šargarepa']);
-
-// console.log(res);
-
-// res.deleteIng('majonez');
-// console.log(res);
-
-
-

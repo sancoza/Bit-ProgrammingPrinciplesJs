@@ -19,29 +19,29 @@
 // console.log('Površina1: ' + površina1);
 // console.log('Površina2: ' + površina2);
 
-// var hotel = {
-//   ime:'Hotel Park',
-//   adresa: 'Novosadskog Sajma 35',
-//   brojSoba:140,
-//   rezervisano:57,
-//   teretana:true,
-//   brojSlobodnihSoba : function () {
-//     var slobodno = hotel.brojSoba - hotel.rezervisano;
-//     return slobodno;
-//   }
-// }
+var hotel = {
+  ime: 'Hotel Park',
+  adresa: 'Novosadskog Sajma 35',
+  brojSoba: 140,
+  rezervisano: 57,
+  teretana: true,
+  brojSlobodnihSoba: function () {
+    var slobodno = hotel.brojSoba - hotel.rezervisano;
+    return slobodno;
+  },
+};
 
-// console.log('Podaci o hotelu:');
-// console.log('Naziv ' + hotel.ime );
-// console.log('Adresa ' + hotel.adresa );
-// console.log('Kapacitet: ' +hotel.brojSoba);
-// console.log('Teretana: ' )
-// if(hotel.teretana === true) {
-//   console.log('Da')
-// }else {
-//   console.log('Ne');
-// }
-// console.log('Broj slobodnih soba: ' + hotel.brojSlobodnihSoba());
+console.log('Podaci o hotelu:');
+console.log('Naziv ' + hotel.ime);
+console.log('Adresa ' + hotel.adresa);
+console.log('Kapacitet: ' + hotel.brojSoba);
+console.log('Teretana: ');
+if (hotel.teretana === true) {
+  console.log('Da');
+} else {
+  console.log('Ne');
+}
+console.log('Broj slobodnih soba: ' + hotel.brojSlobodnihSoba());
 
 // var hoteli = [
 //   {
@@ -235,7 +235,6 @@
 // var drzave = { 1 : "RS" , 2 : "RU" , 3 : "UK", 4 : "ESP" };
 // var gradovi = [ ["London", 3], ["Novi Sad", 1], ["Moskva", 2], ["Madrid", 4]];
 
-
 // var drzave = { 1: 'RS', 2: 'RU', 3: 'UK', 4: 'ESP' };
 // var gradovi = [
 //   ['London', 3],
@@ -262,7 +261,6 @@
 // 		- Upali: 		Postavlja atribut 'Upaljen' na true
 // 		- Ugasi: 		Postavlja atribut 'Upaljen' na false
 // 		- Prefarbaj:	Kao parametar prima ime nove boje, i postavlja atribut 'Boja' na tu vrednost
-
 
 // var automobil = {
 //   marka: 'Mercedes',
