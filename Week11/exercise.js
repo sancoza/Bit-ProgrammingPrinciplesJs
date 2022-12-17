@@ -19,29 +19,29 @@
 // console.log('Površina1: ' + površina1);
 // console.log('Površina2: ' + površina2);
 
-var hotel = {
-  ime: 'Hotel Park',
-  adresa: 'Novosadskog Sajma 35',
-  brojSoba: 140,
-  rezervisano: 57,
-  teretana: true,
-  brojSlobodnihSoba: function () {
-    var slobodno = hotel.brojSoba - hotel.rezervisano;
-    return slobodno;
-  },
-};
+// var hotel = {
+//   ime: 'Hotel Park',
+//   adresa: 'Novosadskog Sajma 35',
+//   brojSoba: 140,
+//   rezervisano: 57,
+//   teretana: true,
+//   brojSlobodnihSoba: function () {
+//     var slobodno = hotel.brojSoba - hotel.rezervisano;
+//     return slobodno;
+//   },
+// };
 
-console.log('Podaci o hotelu:');
-console.log('Naziv ' + hotel.ime);
-console.log('Adresa ' + hotel.adresa);
-console.log('Kapacitet: ' + hotel.brojSoba);
-console.log('Teretana: ');
-if (hotel.teretana === true) {
-  console.log('Da');
-} else {
-  console.log('Ne');
-}
-console.log('Broj slobodnih soba: ' + hotel.brojSlobodnihSoba());
+// console.log('Podaci o hotelu:');
+// console.log('Naziv ' + hotel.ime);
+// console.log('Adresa ' + hotel.adresa);
+// console.log('Kapacitet: ' + hotel.brojSoba);
+// console.log('Teretana: ');
+// if (hotel.teretana === true) {
+//   console.log('Da');
+// } else {
+//   console.log('Ne');
+// }
+// console.log('Broj slobodnih soba: ' + hotel.brojSlobodnihSoba());
 
 // var hoteli = [
 //   {

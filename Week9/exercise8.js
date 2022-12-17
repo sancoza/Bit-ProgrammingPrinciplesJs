@@ -86,6 +86,12 @@
 // Input: JSGuru123
 // Output: Your password is cool!
 
+// proverite da li je string validan password
+// ako jeste, pozovete successCallback
+// ako nije, pozovete errorCallback
+// function success() {
+//   console.log("Success")}
+
 // (function checkPW(password, successCallback, errorCallback) {
 //   var digits = ["0", "1", " 2", "3", "4", "5", "6", "7", "8", "9"];
 //   for (i = 0; i < password.length; i++) {
@@ -97,6 +103,39 @@
 //   }
 //   return errorCallback();
 // })("JS1234vs3", function() { console.log("Your password is cool") }, function() { console.log("Your password is invalid") });
+
+//Sonja version:
+
+function succesCallback() {
+  console.log('Paswword ok');
+}
+
+function errorCallback() {
+  console.log('Paswword invalid');
+}
+
+function isValid(password) {
+  if (password.length < 6) {
+    return false;
+  }
+  for (let i = 0; i < password.length; i++) {
+    var nextCharacter = parseInt.password[i];
+    if (Number.isNaN(nextCharacter)) {
+      return true;
+    }
+  }
+  return false;
+}
+
+function mainFunction(password, success, error) {
+  if (isValid(password)) {
+    success();
+  } else {
+    error();
+  }
+}
+
+mainFunction('ggggg6', succesCallback, errorCallback);
 
 // 7. Write a function that filters elements of the given array so that they satisfy a condition
 // given by the callback function.
