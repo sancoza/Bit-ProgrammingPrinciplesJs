@@ -4,5 +4,5 @@ function Student (name, surname) {
 }
 
 Student.prototype.getStudentData = function () {
-  return this.name + ' '+ this.surname;
+  return this.name + ' ' + this.surname;
 }
